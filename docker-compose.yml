@@ -1,0 +1,9 @@
+version: "3"
+services:
+  frontend:
+    build: .
+    ports:
+      - "3002:3000"
+    volumes:
+      - .:/workdir/frontend
+    tty: true
